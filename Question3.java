@@ -4,13 +4,13 @@ public class Question3
 {
   public static void main(String[] args)
   {
-    /**
-     * Reads integer entered by the user, multiplies the integer by itself and print out the result.
-     * 
-     * Hint: in.nextInt() to read integer
-     */
-     
-    Scanner in = new Scanner(System.in);
+    //gets an integer input from user
+    Scanner userInput = new Scanner(System.in);
+    System.out.print("Enter a Number: ");
+    int num = userInput.nextInt();
     
+    //multiplies the value by itself and print the value out
+    int output = num * num;
+    System.out.println("The Result is " + output);
   }
 }
